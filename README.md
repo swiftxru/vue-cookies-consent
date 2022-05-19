@@ -1,4 +1,7 @@
 # Vue Cookies Consent
+![Size](https://img.shields.io/bundlephobia/minzip/@norvikit/vue-cookies-consent)
+![Downloads](https://img.shields.io/npm/dt/@norvikit/vue-cookies-consent)
+![Version](https://img.shields.io/npm/v/@norvikit/vue-cookies-consent)
 
 Nice and clean Vue component to display message about cookies
 - 🎬 [Demo](https://norvikit.github.io/vue-cookies-consent/)
@@ -57,8 +60,8 @@ Nice and clean Vue component to display message about cookies
 
 | Event         | Description                                    | Example                       |
 |---------------|------------------------------------------------|-------------------------------|
-| shown         | Fired after window is shown                    | `@show="someMethod"`          |
+| shown         | Fired after window is shown                    | `@shown="someMethod"`         |
 | accept        | Fired after accept button is clicked           | `@accept="someMethod"`        |
-| lsSaved       | Fired after window state saved to localStorage | `@ls-ssaved="someMethod"`     |
+| lsSaved       | Fired after window state saved to localStorage | `@ls-saved="someMethod"`      |
 | cookiesSaved  | Fired after window state saved to Cookies      | `@cookies-saved="someMethod"` |
 | hidden        | Fired after window is hidden                   | `@hidden="someMethod"`        |

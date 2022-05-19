@@ -1,7 +1,7 @@
 {
   "name": "@norvikit/vue-cookies-consent",
   "description": "Nice and clean Vue component to display message about cookies",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "license": "MIT",
   "main": "dist/vueCookiesConsent.umd.min.js",
