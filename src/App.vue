@@ -232,6 +232,9 @@ export default {
       textButton: "Accept cookies",
     };
   },
+  mounted() {
+    document.title = "Vue Cookies Consent";
+  },
   methods: {
     resetState() {
       localStorage.removeItem("vcc-window");
