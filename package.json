@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
+  "main": "dist/vueCookiesConsent.umd.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/NorvikIT/vue-cookies-consent.git"
