@@ -1,14 +1,36 @@
 {
-  "name": "vue-cookies-consent",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@norvikit/vue-cookies-consent",
+  "description": "Nice and clean Vue component to display message about cookies",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NorvikIT/vue-cookies-consent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NorvikIT/vue-cookies-consent/issues"
+  },
+  "homepage": "https://github.com/NorvikIT/vue-cookies-consent#readme",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue component",
+    "cookies"
+  ],
+  "author": "norvikit",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name vueCookiesConsent ./src/components/VueCookiesConsent.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "js-cookie": "^3.0.1",
     "vue": "^2.6.14"
   },
   "devDependencies": {
