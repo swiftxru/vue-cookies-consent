@@ -3,7 +3,7 @@
 ![Downloads](https://img.shields.io/npm/dt/@norvikit/vue-cookies-consent)
 ![Version](https://img.shields.io/npm/v/@norvikit/vue-cookies-consent)
 
-Nice and clean Vue component to display message about cookies
+Nice and clean component to display message about cookies in Vue and Nuxt.js
 - 🎬 [Demo](https://norvikit.github.io/vue-cookies-consent/)
 
 ## 📦 Installation
@@ -62,6 +62,22 @@ plugins: [
       src:"plugins/vue-cookies-consent.js", mode:'client'
     }
 ]
+```
+
+And add component to your code:
+
+```vue
+<template>
+  <client-only>
+    <vue-cookies-consent>
+      <template #title>Some default title for window</template>
+      <template #description>
+        <p>Some description in window</p>
+      </template>
+      <template #button>Accept cookies</template>
+    </vue-cookies-consent>
+  </client-only>
+</template>
 ```
 
 ## 🔧 Props
