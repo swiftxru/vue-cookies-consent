@@ -188,7 +188,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .vcc-window {
   margin: 0;
   border: 0;
@@ -203,77 +203,68 @@ export default {
   left: var(--offset-x);
   right: var(--offset-x);
   box-sizing: border-box;
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-  }
-
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    column-gap: 16px;
-    align-items: center;
-  }
-
-  &__title {
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--color-title);
-  }
-
-  &__description {
-    font-size: 16px;
-    margin-top: 8px;
-    color: var(--color-description);
-  }
-
-  &__btn {
-    display: inline-flex;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--color-button);
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    background-color: var(--background-button);
-    border: 1px solid transparent;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transition: 0.4s ease;
-    padding-right: 32px;
-    padding-left: 32px;
-
-    &:hover {
-      background-color: var(--background-button-hover);
-    }
-  }
-
-  &--shadow {
-    box-shadow: 0 0 20px 3px rgba(31, 32, 48, 0.15);
-  }
-
-  &--top {
-    top: var(--offset-y);
-    bottom: auto;
-  }
 }
 
+.vcc-window * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.vcc-window__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px;
+  align-items: center;
+}
+.vcc-window__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--color-title);
+}
+.vcc-window__description {
+  font-size: 16px;
+  margin-top: 8px;
+  color: var(--color-description);
+}
+.vcc-window__btn {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-button);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: var(--background-button);
+  border: 1px solid transparent;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.4s ease;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.vcc-window__btn:hover {
+  background-color: var(--background-button-hover);
+}
+.vcc-window--shadow {
+  box-shadow: 0 0 20px 3px rgba(31, 32, 48, 0.15);
+}
+.vcc-window--top {
+  top: var(--offset-y);
+  bottom: auto;
+}
 @media (max-width: 840px) {
-  .vcc-window {
-    &__grid {
-      flex-direction: column;
-      grid-template-columns: auto;
-      gap: 16px;
-    }
+  .vcc-window__grid {
+    flex-direction: column;
+    grid-template-columns: auto;
+    gap: 16px;
   }
 }
 </style>

@@ -16,7 +16,7 @@ Nice and clean Vue component to display message about cookies
 
 `yarn add @norvikit/vue-cookies-consent`
 
-## 🚀 Usage
+## 🚀 Usage in Vue Components
 
 ```vue
 <template>
@@ -37,6 +37,31 @@ Nice and clean Vue component to display message about cookies
     }
   }
 </script>
+```
+
+## 🚀 Usage throughout the Vue project
+Add this content to main.js
+```js
+import Vue from "vue";
+import VueCookiesConsent from "@norvikit/vue-cookies-consent";
+Vue.use(VueCookiesConsent)
+```
+
+## 🚀 Usage in Nuxt.js
+Create a file `plugins/vue-cookies-consent.js` with the following content:
+```js
+import Vue from "vue";
+import VueCookiesConsent from "@norvikit/vue-cookies-consent";
+Vue.use(VueCookiesConsent)
+```
+Then add plugin to `nuxt.config.js`
+
+```js
+plugins: [
+    {
+      src:"plugins/vue-cookies-consent.js", mode:'client'
+    }
+]
 ```
 
 ## 🔧 Props
