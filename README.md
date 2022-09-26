@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/npm/v/@norvikit/vue-cookies-consent)
 
 Nice and clean component to display message about cookies in Vue and Nuxt.js
-- 🎬 [Demo](https://norvikit.github.io/vue-cookies-consent/)
+- 🎬 [Demo](https://swiftxru.github.io/vue-cookies-consent/)
 
 ## 📦 Installation
 
